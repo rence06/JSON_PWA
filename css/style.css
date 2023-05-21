@@ -39,6 +39,42 @@ nav a:hover {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+#abt-me .pfp
+{
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#abt-me 
+{
+  margin-bottom: 4rem;
+}
+
+#abt-me .col-lg-6:last-child h2
+{
+ 
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+ 
+}
+#abt-me .col-lg-6:last-child p
+{
+  
+  font-weight: 500;
+  font-size: 22px;
+  text-align: justify;
+  word-break: break-all;
+}
+#abt-me .col-lg-6:last-child p span
+{
+  margin-top: 20px;
+  font-weight: bold;
+}
+
 .table-responsive {
   overflow-x: auto;
 }
