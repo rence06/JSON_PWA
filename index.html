@@ -24,59 +24,33 @@
     <h2 class="userSectionTitle">User Information</h2>
     <div class="row">
       <div class="col-lg-12">
-        <p id="data"></p>
-          <script type="text/javascript">
-            fetch('userData.json')
-            .then(function (response) {
-              return response.json();
-            })
-            .then(function (data){
-              for(var i=0; i <data.length; i++)
-              {
-                document.getElementById("data").innerHTML += data[i].id + " - " + data[i].name + " " + data[i].username + "<br />";
-              }
-            })
-            .catch(function (err){
-              console.log(err);
-            });
-            
-          </script>
-
-
-
-
-
-
-        <!-- <table class="table" style="text-align: center;">
+        <div class="table-responsive">
+        <table class="table" style="text-align: center;">
           <thead>
             <tr>
-              <th id="data">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Username</th>
+              <th scope="col">email</th>
+              <th scope="col">Street</th>
+              <th scope="col">Suite</th>
+              <th scope="col">City</th>
+              <th scope="col">Zipcode</th>
+              <th scope="col">Geo's LAT</th>
+              <th scope="col">Geo's LNG</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Website</th>
+              <th scope="col">Company Name</th>
+              <th scope="col">Catch Phrase</th>
+              <th scope="col">BS</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+          <tbody id="userTable">
+            
+          
           </tbody>
-        </table> -->
+        </table>
+        </div>
       </div>
     </div>
     
@@ -85,4 +59,6 @@
 
    
 </body>
+<script src="scripts/script.js"></script>
+
 </html>

@@ -29,7 +29,6 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #fff;
   text-decoration: none;
 }
 .userSectionTitle
@@ -39,4 +38,44 @@ nav a:hover {
   margin-bottom: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+.table-responsive {
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+
+  .table-responsive table {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+  }
+
+  .table-responsive table thead {
+    display: none;
+  }
+
+  .table-responsive table tbody td {
+    display: block;
+    padding: 8px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table-responsive table tbody td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .table-responsive table tbody td:last-child {
+    border-bottom: 0;
+  }
 }
